@@ -55,7 +55,25 @@
 .DispBlock {
   width: 45%;
   height: 15vh;
-  background-color: darken(#212121, 5%);
+  background-image: url("../../assets/sliderImages/_DSC0056.JPG");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  padding-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 9px 12px 36px -5px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 9px 12px 36px -5px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 9px 12px 36px -5px rgba(0, 0, 0, 0.26);
+}
+
+.DispBlockTwo {
+  width: 45%;
+  height: 15vh;
+  background-image: url("../../assets/sliderImages/_DSC0035.JPG");
+  background-size: cover;
+  background-position: center;
   cursor: pointer;
   padding-top: 25vh;
   display: flex;

@@ -67,20 +67,17 @@ const Landing = () => {
           >
             <div className={Style.DispBlock}>
               <h3>Armband</h3>
-              <p>
-                Description of the service will have to go there and it will not
-                be long or anything like that
-              </p>
+              <p>Fitness phone armband that wirelessly charges your phone</p>
               <div className={active ? Style.Line : Style.LineEmpty}></div>
             </div>
             <div
               onClick={active ? ActiveSwitch : ActiveSwitchTwo}
-              className={Style.DispBlock}
+              className={Style.DispBlockTwo}
             >
               <h3>Helmet</h3>
               <p>
-                Description of the service will have to go there and it will not
-                be long or anything like that
+                Safety helmet that keeps your devices charged and shows your
+                workout
               </p>
               <div className={active ? Style.LineEmpty : Style.Line}></div>
             </div>{" "}
@@ -101,25 +98,29 @@ const Landing = () => {
                   any outdoor athlete’s life. DIRECTIONS:{" "}
                 </p>
                 <p>
-                  1. Put on the armband by sliding your arm through the opening.
-                  The charging pad should be on the inside of the armband and
-                  should be in contact with your skin.{" "}
+                  1. Put on the armband by fastening the strap around your arm
+                  tightly.
                 </p>
                 <p>
                   2. Place your smartphone or other compatible device onto the
-                  charging pad. The charging pad should be positioned so that it
-                  aligns with the device's charging port.{" "}
+                  charging pad. The charging pad should make contact with your
+                  phone when inserted and if the batter is charged (otherwise
+                  charge with helmet) the phone should charge if it has wireless
+                  capabilities
                 </p>
                 <p>
-                  3. Wait for the device to start charging. You should see a
-                  charging indicator light up on both the armband and the
-                  device. The time it takes to charge will depend on the
-                  device's battery capacity and the charging speed of the
-                  armband.{" "}
+                  3. Wait for the device to start charging. The time it takes to
+                  charge will depend on the device's battery capacity and the
+                  charging speed of the armband
                 </p>
                 <p>
-                  4. Once your device is fully charged, remove it from the
-                  armband by sliding it off the charging pad.
+                  4. Click on the relevant exercise mode. Low-, med-,
+                  highintensity by clicking one of the modes on the membrane
+                  buttons, it should start vibrating.
+                </p>
+                <p>
+                  5. Short vibrations indicate rest or breathing. Long
+                  vibrations indicate run/sprint or any other relevant exercise
                 </p>
               </div>
             </div>
@@ -154,7 +155,10 @@ const Landing = () => {
                   notified and they can remove the battery and insert it into
                   the wireless charger, or any other item of their choice.
                 </p>
-                <p>4. The helmet also features a display that shows</p>
+                <p>
+                  4. The helmet also features a display that showcases the
+                  exercise status selected on the armband
+                </p>
               </div>
             </div>
           </div>
