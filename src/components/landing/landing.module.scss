@@ -7,15 +7,14 @@
   height: 70vh;
   padding: 3%;
   width: 94%;
-  background-color: green;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: 0.4s linear;
-  
+  transition: 0.4s linear;  
 }
 
 .logoImg{
@@ -75,7 +74,7 @@
   margin-top: 5%;
   text-align: left;
   padding-right: 3%;
-  overflow: scroll;
+ 
 }
 
 .Footer {
@@ -135,6 +134,7 @@ h2 .Margin {
   display: block;
   opacity: 1;
   transition: all 0.5s ease-out;
+  overflow: scroll;
 }
 
 .InfoContainerArmHide {
@@ -149,6 +149,7 @@ h2 .Margin {
   display: block;
   opacity: 1;
   transition: all 0.5s ease-out;
+  overflow: scroll;
 }
 
 .InfoContainerHelmetHIde {

@@ -5,11 +5,15 @@ import Style from "./landing.module.scss";
 import image from '../../assets/sliderImages/image1.JPG';
 import image2 from '../../assets/sliderImages/image2.JPG';
 import image3 from '../../assets/sliderImages/image3.JPG'
+import image4 from '../../assets/sliderImages/image4.JPG'
+import image5 from '../../assets/sliderImages/image5.JPG'
+import image6 from '../../assets/sliderImages/image6.JPG'
+import image7 from '../../assets/sliderImages/image7.JPG'
 
 const Landing = () => {
   const [active, setActive] = useState(true);
   const [img, setimg] = useState(0)
-  const images = [image, image2, image3]
+  const images = [image, image2, image3, image4, image5, image7]
   function ActiveSwitch() {
     setActive(false);
   }
