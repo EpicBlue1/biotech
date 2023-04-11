@@ -2,10 +2,14 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import ButtSlider from "./BtnSlider";
 import Style from "./landing.module.scss";
+import image from '../../assets/sliderImages/image1.JPG';
+import image2 from '../../assets/sliderImages/image2.JPG';
+import image3 from '../../assets/sliderImages/image3.JPG'
 
 const Landing = () => {
   const [active, setActive] = useState(true);
   const [img, setimg] = useState(0)
+  const images = [image, image2, image3]
   function ActiveSwitch() {
     setActive(false);
   }
@@ -15,20 +19,21 @@ const Landing = () => {
   }
 
   useEffect(() => {
-    // const timer = setTimeout(() => {
-    //   img == shoes.length - 1 ? setImg(0) : setImg(img + 1)
-    // }, 4500)
+    const timer = setTimeout(() => {
+      img == images.length - 1 ? setimg(0) : setimg(img + 1)
+    }, 4500)
 
-    // console.log(image)
-  }, [])
+    console.log(image)
+  }, [img])
 
   return (
     <div className={Style.Container}>
-      <div className={Style.HeadSection} >
+      <div className={Style.HeadSection}  style={{ backgroundImage: `url(${images[img]})`}}>
         <div className={Style.SliderSec}>
           <div className={Style.SliderSubSec}>
             <h3 className={Style.welcome}>Welcome to,</h3>
-            <div className={Style.logoImg}></div>
+            <div className={Style.logoImg}>
+            </div>
             <br></br>
             <p className={Style.SliderSubSecPar}>
               Biotech is a perfect balance of high technology and physical

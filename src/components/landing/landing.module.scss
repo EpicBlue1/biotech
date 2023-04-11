@@ -11,6 +11,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.4s linear;
+  
 }
 
 .logoImg{
