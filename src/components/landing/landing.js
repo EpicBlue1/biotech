@@ -5,7 +5,7 @@ import Style from "./landing.module.scss";
 
 const Landing = () => {
   const [active, setActive] = useState(true);
-
+  const [img, setimg] = useState(0)
   function ActiveSwitch() {
     setActive(false);
   }
@@ -14,13 +14,21 @@ const Landing = () => {
     setActive(true);
   }
 
+  useEffect(() => {
+    // const timer = setTimeout(() => {
+    //   img == shoes.length - 1 ? setImg(0) : setImg(img + 1)
+    // }, 4500)
+
+    // console.log(image)
+  }, [])
+
   return (
     <div className={Style.Container}>
-      <div className={Style.HeadSection}>
+      <div className={Style.HeadSection} >
         <div className={Style.SliderSec}>
           <div className={Style.SliderSubSec}>
-            <h3>Welcome to,</h3>
-            <h1>BIOTECH</h1>
+            <h3 className={Style.welcome}>Welcome to,</h3>
+            <div className={Style.logoImg}></div>
             <br></br>
             <p className={Style.SliderSubSecPar}>
               Biotech is a perfect balance of high technology and physical
@@ -73,6 +81,7 @@ const Landing = () => {
               }
             >
               <div className={Style.ImageOne}></div>
+
               <h2 className={Style.Margin}>WIRELESS CHARGING ARMBAND</h2>
               <p>
                 Whether you’re on a hike or a bike, the wireless charging

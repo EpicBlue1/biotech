@@ -13,10 +13,24 @@
   align-items: center;
 }
 
+.logoImg{
+  // background-color: red;
+  width: 20%;
+  aspect-ratio: 20/9;
+  background-image: url('../../assets/logoNoBg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .BodySection {
   padding: 1%;
   height: 115vh;
   width: 98%;
+}
+
+.SliderSubSecPar{
+  color: black;
 }
 
 .HeadingTwo {
@@ -37,12 +51,15 @@
 .DispBlock {
   width: 45%;
   height: 15vh;
-  background-color: purple;
+  background-color: darken(#212121, 5%);
   cursor: pointer;
   padding-top: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 9px 12px 36px -5px rgba(0,0,0,0.26);
+-webkit-box-shadow: 9px 12px 36px -5px rgba(0,0,0,0.26);
+-moz-box-shadow: 9px 12px 36px -5px rgba(0,0,0,0.26);
 }
 
 .Info {
@@ -53,6 +70,7 @@
   margin-top: 5%;
   text-align: left;
   padding-right: 3%;
+  overflow: scroll;
 }
 
 .Footer {
