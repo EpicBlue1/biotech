@@ -14,14 +14,14 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: 0.4s linear;  
+  transition: 0.4s linear;
 }
 
-.logoImg{
+.logoImg {
   // background-color: red;
   width: 20%;
   aspect-ratio: 20/9;
-  background-image: url('../../assets/logoNoBg.png');
+  background-image: url("../../assets/logoNoBg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -33,7 +33,7 @@
   width: 98%;
 }
 
-.SliderSubSecPar{
+.SliderSubSecPar {
   color: black;
 }
 
@@ -61,20 +61,21 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 9px 12px 36px -5px rgba(0,0,0,0.26);
--webkit-box-shadow: 9px 12px 36px -5px rgba(0,0,0,0.26);
--moz-box-shadow: 9px 12px 36px -5px rgba(0,0,0,0.26);
+  box-shadow: 9px 12px 36px -5px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 9px 12px 36px -5px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 9px 12px 36px -5px rgba(0, 0, 0, 0.26);
 }
 
 .Info {
   width: 87%;
   height: 48vh;
-  background-color: green;
+  // background-color: green;
   margin: 0 auto;
   margin-top: 5%;
   text-align: left;
   padding-right: 3%;
- 
+  display: flex;
+  flex-direction: row;
 }
 
 .Footer {
@@ -106,11 +107,26 @@ p {
 }
 
 .ImageOne {
-  float: left;
   width: 40%;
   height: 48vh;
   background-color: white;
-  margin-right: 5%;
+  background-image: url("../../assets/sliderImages/image1.JPG");
+  background-size: cover;
+}
+
+.ImageTwo {
+  width: 40%;
+  height: 48vh;
+  background-color: white;
+  background-image: url("../../assets/sliderImages/image4.JPG");
+  background-size: cover;
+}
+
+.InstructionsContainer {
+  padding-left: 5%;
+  width: 60%;
+  height: 48vh;
+  overflow: auto;
 }
 
 h2 .Margin {
@@ -131,14 +147,14 @@ h2 .Margin {
 
 .InfoContainerArm {
   //   visibility: visible;
-  display: block;
+  display: flex;
   opacity: 1;
   transition: all 0.5s ease-out;
-  overflow: scroll;
 }
 
 .InfoContainerArmHide {
   //   visibility: hidden;
+  display: flex;
   display: none;
   opacity: 0;
   transition: all 0.5s ease-out;
@@ -146,10 +162,9 @@ h2 .Margin {
 
 .InfoContainerHelmet {
   //   visibility: visible;
-  display: block;
+  display: flex;
   opacity: 1;
   transition: all 0.5s ease-out;
-  overflow: scroll;
 }
 
 .InfoContainerHelmetHIde {
